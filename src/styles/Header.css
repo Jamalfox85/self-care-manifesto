@@ -1,0 +1,14 @@
+.header {
+  height: 250px;
+  width: 100%;
+}
+.navbar {
+  width: 100%;
+}
+.nav-links {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1.5rem;
+  list-style-type: none;
+}

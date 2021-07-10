@@ -1,0 +1,11 @@
+.focus-categories {
+  height: 75vh;
+  width: 100%;
+  background-color: orange;
+  display: flex;
+}
+.focus {
+  height: 100%;
+  width: 33.33%;
+  border: solid 2px white;
+}

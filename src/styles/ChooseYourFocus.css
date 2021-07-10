@@ -1,0 +1,16 @@
+.quiz-wrapper {
+  height: 480px;
+  width: 100%;
+  background-color: green;
+  display: flex;
+}
+.quiz-left {
+  height: 100%;
+  width: 50%;
+  background-color: rgb(119, 209, 119);
+}
+.quiz-right {
+  height: 100%;
+  width: 50%;
+  background-color: rgb(79, 122, 79);
+}

@@ -1,0 +1,19 @@
+.quote {
+  height: 125px;
+  width: 100%;
+  background-color: lightblue;
+}
+.main {
+  height: 750px;
+  width: 100%;
+  background-color: blue;
+  display: flex;
+}
+.main-left {
+  height: 100%;
+  width: 50%;
+  background-color: aqua;
+}
+#quote2 {
+  height: 200px;
+}

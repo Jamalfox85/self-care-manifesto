@@ -1,0 +1,45 @@
+.email-wrapper {
+  height: 480px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+}
+.email-background {
+  height: 100%;
+  width: 100%;
+  background-color: tomato;
+  position: relative;
+}
+.email-flower1 {
+  height: 300px;
+  width: 200px;
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  background-color: red;
+}
+.email-flower2 {
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: red;
+}
+.email-content {
+  background-color: blue;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 75%;
+  width: 65%;
+}
+.email-input {
+  height: 100px;
+  width: 75%;
+  background-color: purple;
+}

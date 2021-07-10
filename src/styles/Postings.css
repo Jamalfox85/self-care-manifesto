@@ -1,0 +1,46 @@
+.posting-wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+.background {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+.flower1 {
+  height: 100vh;
+  width: 100vh;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: yellow;
+}
+.flower2 {
+  height: 50vh;
+  width: 50vh;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: rgb(138, 138, 10);
+}
+
+.section-header {
+  position: absolute;
+  z-index: 2;
+  color: white;
+  top: 5%;
+}
+
+.posts {
+  height: 50vh;
+  width: 100%;
+  background-color: yellowgreen;
+  position: absolute;
+  top: 30%;
+  display: flex;
+  justify-content: space-evenly;
+}
