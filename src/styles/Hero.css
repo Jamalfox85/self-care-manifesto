@@ -1,19 +1,109 @@
+.quote::before {
+  content: "";
+  width: 100vw;
+  height: 150vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  background-image: url("../Assets/Flower-Bunch.png");
+  background-size: cover;
+  background-position: center bottom;
+  transform: translateZ(-1px) scale(2);
+}
 .quote {
-  height: 125px;
+  height: 25vh;
   width: 100%;
-  background-color: lightblue;
+  position: relative;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  letter-spacing: 2px;
+  transform-style: preserve-3d;
+  background: rgb(133, 133, 133);
+  background: linear-gradient(
+    113deg,
+    rgba(133, 133, 133, 0.5) 25%,
+    rgba(195, 172, 206, 0.5) 75%
+  );
+  color: #fff;
 }
 .main {
   height: 750px;
   width: 100%;
-  background-color: blue;
   display: flex;
 }
 .main-left {
   height: 100%;
   width: 50%;
-  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 3rem;
+  background-color: #c3acce;
+}
+.sup-text {
+  align-self: flex-start;
+  font-size: 24px;
+}
+.main-text {
+  width: 100%;
+  text-align: left;
+  font-size: 36px;
+  line-height: 1.5;
+  font-weight: lighter;
+}
+.headline {
+  font-size: 48px;
+  font-weight: bold;
+  color: #fff;
+  line-height: 3;
+}
+.CTA {
+  border-radius: 2rem;
+  padding: 1.5rem;
+  background-color: #fcf0f3;
+  text-align: center;
+  transition: all 0.2s;
+}
+.CTA:hover {
+  background-color: #fcf0f3c9;
+}
+
+.main-right {
+  height: 100%;
+  width: 50%;
+  background-image: url("../Assets/Hero-Img.jpg");
+  background-size: cover;
+  background-position-x: center;
 }
 #quote2 {
   height: 200px;
+  /* background-color: #fcf0f3; */
 }
+
+/* .food {
+  height: 150vh;
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  z-index: -1;
+  transform-style: preserve-3d;
+}
+.food::before {
+  content: "";
+  width: 100vw;
+  height: 150vh;
+  top: 0;
+  left: 0;
+  background-image: url("../Assets/foodbg.jpg");
+  background-size: cover;
+  position: absolute;
+  z-index: -2;
+  transform: translateZ(-1px) scale(2);
+} */

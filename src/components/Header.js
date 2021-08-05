@@ -3,9 +3,16 @@ import { BrowserRouter as Router, Link } from "react-router-dom";
 import "../styles/Header.css";
 import logo from "../Assets/Logo.png";
 
+const linkStyle = {
+  margin: "1rem",
+  textDecoration: "none",
+  fontSize: "16px",
+  color: "black",
+};
+
 function Header() {
   return (
-    <>
+    <div className="header-wrapper">
       <div className="header">
         <img src={logo} alt="Self Care Manifesto Logo" />
       </div>
@@ -13,21 +20,29 @@ function Header() {
         <Router>
           <ul className="nav-links">
             <li className="link">
-              <Link to={""}>Home</Link>
+              <Link to={""} style={linkStyle}>
+                Home
+              </Link>
             </li>
             <li className="link">
-              <Link to={""}>About</Link>
+              <Link to={""} style={linkStyle}>
+                About
+              </Link>
             </li>
             <li className="link">
-              <Link to={""}>Blog</Link>
+              <Link to={""} style={linkStyle}>
+                Blog
+              </Link>
             </li>
             <li className="link">
-              <Link to={""}>Resources</Link>
+              <Link to={""} style={linkStyle}>
+                Resources
+              </Link>
             </li>
           </ul>
         </Router>
       </div>
-    </>
+    </div>
   );
 }
 

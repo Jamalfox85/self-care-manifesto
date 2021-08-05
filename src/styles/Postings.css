@@ -2,9 +2,9 @@
   position: relative;
   height: 100%;
   width: 100%;
-  background-color: black;
   display: flex;
   justify-content: center;
+  background-color: #fff;
 }
 .background {
   height: 100vh;
@@ -17,7 +17,8 @@
   position: absolute;
   left: 0;
   bottom: 0;
-  background-color: yellow;
+  background-image: url("../Assets/L-Flower.png");
+  background-size: cover;
 }
 .flower2 {
   height: 50vh;
@@ -25,22 +26,20 @@
   position: absolute;
   right: 0;
   top: 0;
-  background-color: rgb(138, 138, 10);
+  transform: rotate(180deg);
+  background-image: url("../Assets/Branch-Flower-Purple.png");
+  background-size: cover;
 }
 
 .section-header {
   position: absolute;
   z-index: 2;
-  color: white;
   top: 5%;
 }
 
 .posts {
-  height: 50vh;
-  width: 100%;
-  background-color: yellowgreen;
   position: absolute;
   top: 30%;
   display: flex;
-  justify-content: space-evenly;
+  overflow-x: scroll;
 }

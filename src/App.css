@@ -3,7 +3,17 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 .App {
   text-align: center;
+}
+html {
+  overflow: hidden;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100vh;
 }

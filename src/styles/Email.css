@@ -1,16 +1,15 @@
 .email-wrapper {
   height: 480px;
   width: 100%;
+  position: relative;
   display: flex;
   justify-content: center;
-  position: relative;
   align-items: center;
+  /* background-color: #a4eef9; */
+  background-color: #fff;
 }
-.email-background {
-  height: 100%;
-  width: 100%;
-  background-color: tomato;
-  position: relative;
+.email-overlay {
+  transform: rotate(180deg);
 }
 .email-flower1 {
   height: 300px;
@@ -18,7 +17,9 @@
   position: absolute;
   bottom: 0;
   left: 5%;
-  background-color: red;
+  background-image: url("../Assets/Flower-Poppy.png");
+  background-size: cover;
+  background-position: center;
 }
 .email-flower2 {
   height: 100%;
@@ -26,20 +27,37 @@
   position: absolute;
   top: 0;
   right: 0;
-  background-color: red;
+  background-image: url("../Assets/Flower-Large.png");
+  background-size: cover;
+  background-position: center;
 }
 .email-content {
-  background-color: blue;
+  height: 100%;
+  width: 100%;
   position: absolute;
+  z-index: 2;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: space-evenly;
-  height: 75%;
-  width: 65%;
+  align-items: center;
+  flex-direction: column;
+}
+.email-input-wrapper {
+  height: 75px;
+  width: 90%;
+  display: flex;
+  border-radius: 25px;
 }
 .email-input {
-  height: 100px;
+  height: 100%;
   width: 75%;
-  background-color: purple;
+  border-radius: 25px 0 0 25px;
+  text-align: center;
+  font-size: 24px;
+}
+.email-input-button {
+  height: 100%;
+  width: 25%;
+  background-color: #c3acce;
+  border-radius: 0 25px 25px 0;
+  font-size: 24px;
 }

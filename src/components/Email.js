@@ -4,14 +4,16 @@ import "../styles/Email.css";
 function Email() {
   return (
     <div className="email-wrapper">
-      <div className="email-background">
-        <div className="email-flower1"></div>
-        <div className="email-flower2"></div>
-      </div>
+      <div className="overlay email-overlay"></div>
+      <div className="email-flower1"></div>
+      <div className="email-flower2"></div>
       <div className="email-content">
-        <p>This is lorem bitch</p>
-        <h1>This is lorem bitch</h1>
-        <div className="email-input"></div>
+        <p>Want to receive updates and reminders?</p>
+        <h1>Join the team and stay connected!</h1>
+        <div className="email-input-wrapper">
+          <input className="email-input"></input>
+          <button className="email-input-button">Submit</button>
+        </div>
       </div>
     </div>
   );

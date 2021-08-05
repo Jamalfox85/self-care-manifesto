@@ -1,23 +1,53 @@
 .card {
-  border: solid 2px black;
-  height: 100%;
-  width: 411px;
+  height: 400px;
+  width: 275px;
   position: relative;
+  overflow: hidden;
+  border: solid 2px black;
+  border-radius: 25px;
+  margin: 2rem;
+  transition: 0.2s ease;
+  background-color: #fff;
+}
+.card:hover {
+  transform: scale(1.05);
 }
 .card-image {
+  height: 60%;
   width: 100%;
-  height: 75%;
-  background-color: purple;
+  background-image: url("../Assets/Meditation-Blog-Img.jpg");
+  background-size: cover;
+  background-position: center;
 }
 .card-name {
+  height: 10%;
   width: 100%;
-  height: 25%;
-  background-color: rgb(214, 21, 214);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.75rem;
+}
+.card-description {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+}
+.read-more {
+  display: block;
 }
 .card-tag {
   height: 20px;
   width: 25%;
-  background-color: rgb(219, 166, 219);
   position: absolute;
   top: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a4eef9;
+  border-radius: 0 25px 25px 0;
+  padding: 15px;
+  font-weight: lighter;
 }
