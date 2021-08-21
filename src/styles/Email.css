@@ -1,11 +1,10 @@
 .email-wrapper {
-  height: 480px;
+  height: 300px;
   width: 100%;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: #a4eef9; */
   background-color: #fff;
 }
 .email-overlay {
@@ -40,10 +39,12 @@
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
+  color: rgba(195, 172, 206, 1);
+  background-color: rgba(180, 177, 177, 0.2);
 }
 .email-input-wrapper {
-  height: 75px;
-  width: 90%;
+  height: 40px;
+  width: 50%;
   display: flex;
   border-radius: 25px;
 }
@@ -53,11 +54,30 @@
   border-radius: 25px 0 0 25px;
   text-align: center;
   font-size: 24px;
+  background-color: rgba(180, 177, 177, 0.2);
 }
 .email-input-button {
   height: 100%;
   width: 25%;
-  background-color: #c3acce;
+  background-color: rgba(195, 172, 206, 0.8);
   border-radius: 0 25px 25px 0;
   font-size: 24px;
+}
+
+@media (max-width: 950px) {
+  .email-input {
+    height: 100%;
+    width: 75%;
+    border-radius: 25px 0 0 25px;
+    text-align: center;
+    font-size: 12px;
+    background-color: rgba(70, 68, 68, 0.2);
+  }
+  .email-input-button {
+    height: 100%;
+    width: 25%;
+    background-color: rgba(195, 172, 206, 0.8);
+    border-radius: 0 25px 25px 0;
+    font-size: 12px;
+  }
 }

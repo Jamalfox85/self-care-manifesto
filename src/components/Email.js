@@ -4,7 +4,7 @@ import "../styles/Email.css";
 function Email() {
   return (
     <div className="email-wrapper">
-      <div className="overlay email-overlay"></div>
+      <div className="email-overlay"></div>
       <div className="email-flower1"></div>
       <div className="email-flower2"></div>
       <div className="email-content">

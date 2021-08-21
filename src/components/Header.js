@@ -13,30 +13,31 @@ const linkStyle = {
 function Header() {
   return (
     <div className="header-wrapper">
-      <div className="header">
+      {/* <div className="header">
         <img src={logo} alt="Self Care Manifesto Logo" />
-      </div>
+      </div> */}
       <div className="navbar">
+        <img src={logo} alt="Self Care Manifesto Logo" className="nav-logo" />
         <Router>
           <ul className="nav-links">
             <li className="link">
               <Link to={""} style={linkStyle}>
-                Home
+                <span className="nav-link-text">Home</span>
               </Link>
             </li>
             <li className="link">
               <Link to={""} style={linkStyle}>
-                About
+                <span className="nav-link-text">About</span>
               </Link>
             </li>
             <li className="link">
               <Link to={""} style={linkStyle}>
-                Blog
+                <span className="nav-link-text">Blog</span>
               </Link>
             </li>
             <li className="link">
               <Link to={""} style={linkStyle}>
-                Resources
+                <span className="nav-link-text">Resources</span>
               </Link>
             </li>
           </ul>

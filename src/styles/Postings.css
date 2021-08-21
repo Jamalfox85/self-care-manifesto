@@ -1,15 +1,17 @@
 .posting-wrapper {
   position: relative;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
   background-color: #fff;
+  align-items: center;
 }
 .background {
   height: 100vh;
   width: 100%;
-  position: relative;
+  position: absolute;
+  z-index: 1;
 }
 .flower1 {
   height: 100vh;
@@ -33,13 +35,51 @@
 
 .section-header {
   position: absolute;
-  z-index: 2;
+  z-index: 4;
   top: 5%;
 }
 
 .posts {
-  position: absolute;
-  top: 30%;
+  height: 350px;
+  width: 100vw;
+  color: #000;
   display: flex;
-  overflow-x: scroll;
+  justify-content: space-evenly;
+  padding: 1.5rem;
+  cursor: pointer;
+  margin-top: 2rem;
+  position: relative;
+  z-index: 2;
+}
+.blog-post-img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 950px) {
+  .posting-wrapper {
+    height: 100%;
+  }
+  .posts {
+    height: auto;
+    overflow: hidden;
+    width: 100%;
+  }
+  .quote-posts {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  .quote-post {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5%;
+  }
+  .quote-post-img {
+    height: 200px;
+    width: 300px;
+    background-color: black;
+  }
 }

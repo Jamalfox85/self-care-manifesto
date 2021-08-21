@@ -8,12 +8,35 @@
   width: 100%;
 }
 .navbar {
+  height: 75px;
   width: 100%;
+  display: flex;
+  padding: 0 5%;
 }
 .nav-links {
-  width: 100%;
+  width: 50%;
   display: flex;
   justify-content: space-evenly;
   padding: 1.5rem;
   list-style-type: none;
+}
+.nav-logo {
+  height: 100%;
+  margin-right: auto;
+}
+
+@media (max-width: 600px) {
+  .nav-link-text {
+    font-size: 12px;
+  }
+}
+@media (max-width: 450px) {
+  .nav-link-text {
+    font-size: 10px;
+  }
+}
+@media (max-width: 300px) {
+  .nav-link-text {
+    font-size: 8px;
+  }
 }
