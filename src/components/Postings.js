@@ -1,6 +1,5 @@
 import React from "react";
 import "../styles/Postings.css";
-import Post from "./Post";
 import flowerbranchp from "../Assets/Branch-Flower-Purple.png";
 import manifest from "../Assets/manifest.jpg";
 import mbss from "../Assets/mbs-s.jpg";
